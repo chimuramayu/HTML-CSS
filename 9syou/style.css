@@ -14,7 +14,7 @@ main {
   width: 960px;
   margin: 50px auto;
 }
-.contents-item {
+.content-item {
   width: 300px;
   padding: 10px;
   border: 1px solid #eee;
@@ -22,7 +22,7 @@ main {
   float: left;
   position: relative;
 }
-.contents-item:last-child {
+.content-item:last-child {
   margin-right: 0;
 }
 
@@ -54,4 +54,21 @@ main {
 }
 .headline {
   margin: 15px 0 5px;
+}
+
+@media screen and (max-width:768px) {
+  main {
+    width: 100%;
+    }
+  .content-item {
+    float: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .content-item:last-child {
+    margin: 20px auto;
+  }
+  .img1, .img2, .img3 {
+    background-position: bottom;
+  }
 }
